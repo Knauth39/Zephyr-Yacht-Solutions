@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from .models import CustomUser
 
-# Create your views here.
+class CustomUserView(ListView):
+    model = CustomUser
+    template_name = "client.html"

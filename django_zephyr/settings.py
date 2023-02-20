@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = env.str("SECRET_KEY")
-SECRET_KEY = "django-insecure-0r&=mv52jk=1_njyb)8nbx6qhh-r6j!#sv=o5y2omqvku*j9#("
+SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # WSV - Django for Beginers page 292
@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     # Local
     "reviews.apps.ReviewsConfig",
     "accounts.apps.AccountsConfig",
+    "contents.apps.ContentsConfig",
+    "sendemail.apps.SendemailConfig",
 ]
 
 MIDDLEWARE = [
@@ -64,7 +66,7 @@ ROOT_URLCONF = 'django_zephyr.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,16 +128,26 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Custom User 
 AUTH_USER_MODEL = "accounts.CustomUser"  
 
-LOGIN_REDIRECT_URL = "home" 
-LOGOUT_REDIRECT_URL = "home"  
+# Redirect links to the 'home' template
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
 
+# Crispy Forms!
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"  
 CRISPY_TEMPLATE_PACK = "bootstrap5"  
+
+# Email settings
+DEFAULT_FROM_EMAIL = "info@zephyrsolutions.us"
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

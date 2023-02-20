@@ -4,6 +4,7 @@
       Created: 2019
       Last modified: June 2022
 -->
+{% load static %}
 <!doctype html>
 <html>
 <head>
@@ -12,13 +13,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="yacht agent, fort lauderdale, compliance, immigration, cruising permit">
     <meta name="description" content="We provide simplified solutions for yachts entering US waters, as agents, we ensure 100% compliance with governing agencies.  We provide clearnace assistance, curising permits, and shoreside managment."/>
-    <title>Zephyr Yacht Solutions | Yacht Agent USA</title>
+    <title>{% block title %}Zephyr Yacht Solutions | Yacht Agent USA{% endblock title %}</title>
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="zys-css.css">
+    
+    <!-- Static CSS file -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/mfo7eer.css">
-    <link rel="apple-touch-icon" href="favicon.gif" />
     <script src="https://kit.fontawesome.com/85be1e9243.js" crossorigin="anonymous"></script>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143932765-2"></script>
     <script>
@@ -44,12 +56,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="compliance.html">Compliance <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="concierge.html">Concierge <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="write_review.html">Review <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="client.html">Client <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{{ home }}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{{ compliance }}">Compliance <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{{ concierge }}">Concierge <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{{ contact }}">Contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{{ review }}">Review <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{{ client }}">Client <span class="sr-only">(current)</span></a>
                 </div>
             </div>
         </nav>
