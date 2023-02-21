@@ -47,7 +47,7 @@
 <!-- Header and Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="/images/branding/ZYS_icon_circle_dark.png" width="30" height="30" class="d-inline-block align-top"> 
                 Zephyr Yacht Solutions
             </a>
@@ -56,12 +56,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="{{ home }}">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="{{ compliance }}">Compliance <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="{{ concierge }}">Concierge <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="{{ contact }}">Contact <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="{{ review }}">Review <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="{{ client }}">Client <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{% url 'compliance' %}">Compliance <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{% url 'concierge' %}">Concierge <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{% url 'contact' %}">Contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{% url 'client' %}">Client <span class="sr-only">(current)</span></a>
                 </div>
             </div>
         </nav>

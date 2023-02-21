@@ -7,4 +7,3 @@ class Review(models.Model):
     position    = models.CharField(max_length=150)
     company     = models.CharField(max_length=150)
     review      = models.TextField()
-    publish     = models.BooleanField(default=True)

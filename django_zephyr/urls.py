@@ -21,5 +21,5 @@ urlpatterns = [
     path("", include("reviews.urls")),
     path("", include("accounts.urls") ),
     path("", include("sendemail.urls")),
-    #path("", include("contents.urls")),
+    path("", include("contents.urls")),
 ]

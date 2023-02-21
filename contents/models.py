@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class Compliance(models.Model):
+    pass 
+
+class Concierge(models.Model):
+    pass 
+

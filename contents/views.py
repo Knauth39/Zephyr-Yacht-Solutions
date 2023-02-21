@@ -1,3 +1,13 @@
-from django.shortcuts import render
+# contents/views.py
 
-# Create your views here.
+from django.shortcuts import render
+from django.views.generic.base import TemplateView
+from .models import Compliance, Concierge
+
+class ComplianceView(TemplateView):
+    model = Compliance
+    template_name = "compliance.html"
+
+class ConciergeView(TemplateView):
+    model = Concierge
+    template_name = "concierge.html"
