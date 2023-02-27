@@ -1,10 +1,9 @@
 # reviews/urls.py
 
 from django.urls import path 
-from .views import ReviewListView, UserWriteReview
+from .views import ReviewListView
 
 urlpatterns = [
     path("", ReviewListView.as_view(), name="home"),
-    path("reviews/", UserWriteReview, name="reviews")
 ]
 

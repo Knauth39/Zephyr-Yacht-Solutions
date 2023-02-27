@@ -2,24 +2,32 @@
 
 {% extends "_base.html" %}
 {% load crispy_forms_tags %}
-{% block title %}Zeppelin | Contact{% endblock %}
+{% block title %}ZYS | Contact{% endblock %}
 
 {% block content %}
+<div class="image-holder">
+    <img src="/static/images/background/Yacht_stern_2_oil.png" class="width_100_prc">
+</div>
 
-<div class="heading-box-3">
-	<div class="contact-page-body-wrapper">
-	<p class="contact-page-text">Whether you are seeking advice on procedures, or you need an agent on the ground to execute your clearances, we are here to help simplify the process, and ensure 100% compliant with local authoritative governing agencies.  Our goal and purpose is to eliminate the time and stress of clearances and logistics.</p>
-	<br>
-	<p class="contact-page-text"><a href="https://wa.me/19544129280" class="contact-page-link-text">WhatsApp</a> | <a href="tel:1-954-412-9280" class="contact-page-link-text">Phone</a> | <a href="mailto:info@zephyrsolutions.us" class="contact-page-link-text">Email</a></p>
-	</div>
-	</div>
-<!-- Form -->
-<form method="post">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <div class="form-actions">
-        <button type="submit">Send</button>
+<div class="container block-content-size">
+    <div class="container box-1">
+        <div class="container box-2">
+            <h4>Whether you are seeking advice on procedures, or you need an agent on the ground to execute your clearances, 
+            we are here to help simplify the process, and ensure 100% compliannce with local authoritative governing agencies.  
+            Our goal and purpose is to eliminate the time and stress of clearances and logistics.</h4>
+        </div>
     </div>
-</form>
 
+    <!-- Form -->
+    <div class="container box-2">
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="form-actions">
+                <button class="button" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+
+</div>
 {% endblock %}

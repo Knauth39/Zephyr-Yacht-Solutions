@@ -22,6 +22,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/mfo7eer.css">
     <script src="https://kit.fontawesome.com/85be1e9243.js" crossorigin="anonymous"></script>
     
@@ -45,11 +48,11 @@
 
 <body>
 <!-- Header and Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header-bar" style="margin-bottom: 25px;>
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img src="/images/branding/ZYS_icon_circle_dark.png" width="30" height="30" class="d-inline-block align-top"> 
-                Zephyr Yacht Solutions
+                <img src="/static/images/branding/ZYS_knot_dark_sm.png" class="d-inline-block align-top"> 
+                <span class="font-trajan-pro">Zephyr Yacht Solutions</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,6 +62,7 @@
                     <a class="nav-item nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link active" href="{% url 'compliance' %}">Compliance <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link active" href="{% url 'concierge' %}">Concierge <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="{% url 'management' %}">Management <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link active" href="{% url 'contact' %}">Contact <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link active" href="{% url 'client' %}">Client <span class="sr-only">(current)</span></a>
                 </div>
@@ -68,18 +72,20 @@
 
 <!-- Main content to extend base -->
     <main>
+    <div style="margin-top: 65px;>
     {% block content %}
     {% endblock content %}
+    </div>
     </main>
 
 <!-- Footer -->
     <footer>
-	    <img class="footer-icon" src="pic_assets/brandingImages/ZYS_icon_circle_light.png" alt="ZYS Square Knot">
-	    <h6 class="footerText"><a href="tel:954.412.9280" class="footerText">954.412.9280</a> | <a href="mailto:info@zephyrsolutions.us" class="footerText">info@zephyrsolutions.us</a></h6>
-        <h6 class="footerText"><a class="social_media" href="https://www.instagram.com/zephyryachtsolutions/" target="_blank"><i class="fab fa-instagram"></i></a> <a class="social_media" href="https://www.facebook.com/Zephyr-Yacht-Solutions-102578561983839" target="_blank"><i class="fab fa-facebook"></i></a></h6>
-	    <hr>
-        <h6 class="footerText">Website designed and developed by <a href="https://daedalusdev.com/" target="_blank" class="daedalus_link">Deadalus Dev Inc.</a></h6>
-        <h6 class="footerText">Copyright © 2019 Zephyr Yacht Solutions</h6>
+	    <img src="/static/images/branding.ZYS_Circle_DB-01.png" alt="">
+	    <h6 class="text-footer"><a class="text-footer" href="tel:954.412.9280">954.412.9280</a> | <a class="text-footer" href="mailto:info@zephyrsolutions.us">info@zephyrsolutions.us</a></h6>
+        <h6 class="text-footer"><a href="https://www.instagram.com/zephyryachtsolutions/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/Zephyr-Yacht-Solutions-102578561983839" target="_blank"><i class="fab fa-facebook"></i></a></h6>
+	    <br>
+        <h6 class="text-footer">Website designed and developed by <a class="text-footer" href="https://daedalusdev.com/" target="_blank">Deadalus Dev Inc.</a></h6>
+        <h6 class="text-footer">Copyright © 2019 Zephyr Yacht Solutions</h6>
     </footer>
 
 <!-- Bootstrap Javascript -->

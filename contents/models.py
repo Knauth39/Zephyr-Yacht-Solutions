@@ -6,3 +6,5 @@ class Compliance(models.Model):
 class Concierge(models.Model):
     pass 
 
+class Management(models.Model):
+    pass
