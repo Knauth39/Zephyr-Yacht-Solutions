@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/* CSS Document */
+
+:root {
+	--colorZYSdarkBlue: #253E59;
+	--colorZYSlightBlue: #5684A6;
+	--colorZYSwhiteMain: #e6e6e6;
+	--colorZYSwhiteOff: #EFDAC8;
+	--colorGrey: #4f4f4f;
+	--colorGreyLight: #BFBFBF;
+	--colorTransparentWhite: hsla(0, 0%, 90%, 0.50);
+	--colorTransparentWhite-2: hsla(0, 0%, 90%, 0.75);
+	--colorTransparentBlue: hsla(211, 41%, 25%, .50);
+	--colorTransparentBlue-2: hsla(211, 41%, 25%, .75);
+	--fontTrajanPro: "Trajan Pro 3", "Trajan Pro 3 Light";
+	--borderRadius: 10px;
+	--borderRadiusButton: 25px;
+}
+
+.block-content-size {
+	width: 95%;
+	margin: 75px auto 75px auto;
+}
+
+h2,
+h4,
+h5,
+h6,
+p,
+li {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	color: var(--colorZYSdarkBlue);
+	background-color: var(--colorZYSwhiteMain);
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+footer {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	background-color: var(--colorZYSdarkBlue);
+	color: var(--colorZYSwhiteMain);
+	justify-content: center;
+	align-content: center;
+	position: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--colorZYSwhiteMain);
+}
+
+.text-footer {
+	color: var(--colorZYSwhiteMain);
+	text-align: center;
+}
+
+.text-site-title {
+	letter-spacing: 2px;
+}
+
+.zeppelin-text {
+	font-size: 2vh;
+	color: #FB991C;
+	font-family: "westgate", sans-serif;
+}
+
+.nav-link {
+	font-weight: 200;
+}
+
+h3,
+.font-trajan-pro {
+	font-family: var(--fontTrajanPro);
+	font-weight: 200;
+	letter-spacing: 3px;
+}
+
+.text-color-accent {
+	color: var(--colorZYSlightBlue);
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.header-bar {
+	box-shadow: 5px 0px 5px var(--colorGrey);
+	margin-bottom: 25px;
+}
+
+.table {
+	display: block;
+	margin: 0 auto;
+}
+
+.table-center {
+	display: table;
+	margin: auto;
+	border-collapse: separate;
+	box-sizing: border-box;
+	border-spacing: 2px;
+	border-color: var(--colorGrey);
+}
+
+/* MAIN BACKGROUND IMAGES - hidden on mobile view */
+.image-holder {
+	width: 100%;
+
+}
+
+.footer-logo {
+	padding-bottom: 2vh;
+	height: 10vh;
+	display: block;
+	margin: auto;
+}
+
+.box-1 {
+	margin: 50px auto 25px auto;
+}
+
+.box-2 {
+	margin: 25px auto;
+}
+
+.box-3 {
+	margin: 15px auto;
+}
+
+.box-inverse {
+	background-color: var(--colorZYSlightBlue);
+	color: var(--colorZYSwhiteMain);
+	padding: 25px;
+}
+
+.width_100_prc {
+	width: 100%;
+}
+
+.main-hidden {
+	display: none;
+}
+
+.cencierge-picture {
+	filter: grayscale(90%);
+	transition-duration: 1s;
+}
+
+.cencierge-picture:hover {
+	filter: grayscale(0%);
+}
+
+/*
+.background-home {
+	background-image: url("pic_assets/backGroundImages/Yacht_Bow_oil.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-compliance {
+	background-image: url("pic_assets/backGroundImages/Yacht_Stern_oil.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-concierge {
+	background-image: url("pic_assets/backGroundImages/Sailing_Yacht_oil.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-contact {
+	background-image: url("pic_assets/backGroundImages/yacht_bow_2_oil.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-client {
+	background-image: url("pic_assets/backGroundImages/yacht_stern_2_oil.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-defalt {
+	background-image: url("pic_assets/backGroundImages/winch-oil.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+*/
+button.submit {
+	color: #495057;
+	display: block;
+	width: 100%;
+	background-color: var(--colorZYSwhiteMain);
+	border: 1px solid var(--colorZYSlightBlue);
+	border-radius: 0.25rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	padding: 0.375rem 0.75rem;
+}
+
+button.submit:hover {
+	background-color: var(--colorZYSlightBlue);
+	color: var(--colorZYSwhiteMain);
+	transition-duration: 1s;
+	cursor: pointer;
+}
+
+/* greater than 992 w */
+
+
+/*
+h1 {
+	font-size: 8vw;
+}
+
+h2 {
+	font-size: 7vw;
+}
+
+h3 {
+	font-size: 6vw;
+}
+
+h4 {
+	font-size: 5vw;
+}
+
+h5 {
+	font-size: 4vw;
+}
+
+h6 {
+	font-size: 3vw;
+}
+
+p {
+	font-size: 2vw;
+}
+*/
