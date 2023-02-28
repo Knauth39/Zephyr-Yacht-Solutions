@@ -3,9 +3,9 @@
 from django import forms 
 
 class ContactForm(forms.Form):
-    name_first  = forms.CharField(max_length=100)
-    name_last   = forms.CharField(max_length=100)
-    from_email  = forms.EmailField(required=True)
+    first_name  = forms.CharField(max_length=100)
+    last_name   = forms.CharField(max_length=100)
+    email       = forms.EmailField(required=True)
     message     = forms.CharField(widget=forms.Textarea, required=True)
     '''
     In views.py, impliment an if/else statement to show fields below.

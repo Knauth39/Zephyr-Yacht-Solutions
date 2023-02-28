@@ -27,6 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/mfo7eer.css">
     <script src="https://kit.fontawesome.com/85be1e9243.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/sll0vqo.css">
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-touch-icon.png">
@@ -49,16 +50,16 @@
 <body>
 <!-- Header and Navbar -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light header-bar" style="margin-bottom: 25px;>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light header-bar" style="margin-bottom: 25px";>
             <a class="navbar-brand" href="{% url 'home' %}">
                 <img src="/static/images/branding/ZYS_knot_dark_sm.png" class="d-inline-block align-top"> 
-                <span class="font-trajan-pro">Zephyr Yacht Solutions</span>
+                <span class="font-trajan-pro text-site-title">Zephyr Yacht Solutions</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link active" href="{% url 'compliance' %}">Compliance <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link active" href="{% url 'concierge' %}">Concierge <span class="sr-only">(current)</span></a>
@@ -72,7 +73,7 @@
 
 <!-- Main content to extend base -->
     <main>
-    <div style="margin-top: 65px;>
+    <div style="margin-top: 75px";>
     {% block content %}
     {% endblock content %}
     </div>
@@ -80,10 +81,13 @@
 
 <!-- Footer -->
     <footer>
-	    <img src="/static/images/branding.ZYS_Circle_DB-01.png" alt="">
+	    <img src="/static/images/branding/ZYS_Circle_DB-01.png" alt="ZYS" class="footer-logo">
 	    <h6 class="text-footer"><a class="text-footer" href="tel:954.412.9280">954.412.9280</a> | <a class="text-footer" href="mailto:info@zephyrsolutions.us">info@zephyrsolutions.us</a></h6>
-        <h6 class="text-footer"><a href="https://www.instagram.com/zephyryachtsolutions/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/Zephyr-Yacht-Solutions-102578561983839" target="_blank"><i class="fab fa-facebook"></i></a></h6>
-	    <br>
+        <h5 class="text-footer">
+            <a href="https://www.instagram.com/zephyryachtsolutions/" target="_blank"><i class="fab fa-instagram" style="color: #e6e6e6;"></i></a> 
+            <a href="https://www.facebook.com/Zephyr-Yacht-Solutions-102578561983839" target="_blank"><i class="fab fa-facebook" style="color: #e6e6e6;"></i></a>
+            <i class="fab fa-twitter"></i>
+        </h5>
         <h6 class="text-footer">Website designed and developed by <a class="text-footer" href="https://daedalusdev.com/" target="_blank">Deadalus Dev Inc.</a></h6>
         <h6 class="text-footer">Copyright © 2019 Zephyr Yacht Solutions</h6>
     </footer>

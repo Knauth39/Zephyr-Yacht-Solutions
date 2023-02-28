@@ -12,7 +12,7 @@ def contactView(request):
         form = ContactForm(request.POST) 
         if form.is_valid():
             subject = "Website contact request"
-            from_email = form.cleaned_data["from_email"]
+            from_email = form.cleaned_data["email"]
             message = form.cleaned_data["message"]
             try:
                 send_mail(subject, message, from_email, ["info@zephyrsolutions.us"])
