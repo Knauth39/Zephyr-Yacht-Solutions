@@ -3,9 +3,9 @@
 from django.contrib import admin 
 from django.urls import path 
 
-from .views import contactView, successView 
+from .views import requestRegistrationView, successView
 
 urlpatterns = [
-    path("client/", contactView, name="client"),
+    path("client/", requestRegistrationView, name="client"),
     path("success/", successView, name="success"),
 ]
