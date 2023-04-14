@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "accounts.apps.AccountsConfig",
     "contents.apps.ContentsConfig",
     "sendemail.apps.SendemailConfig",
+    "zeppelin.apps.ZeppelinConfig",
 ]
 
 MIDDLEWARE = [

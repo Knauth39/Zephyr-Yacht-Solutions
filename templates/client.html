@@ -5,5 +5,25 @@
 {% block title %}Zeppelin | Client{% endblock %}
 
 {% block content %}
+<div class="image-holder">
+    <img src="/static/imagesvideo/cloud_scape.mp4" class="width_100_prc">
+</div>
+
+<div class="box-inverse">
+    <h4 class="">Welcom to yachting in the cloud, a secure CRM with a dedicated database server.</h4>
+    <h4>Zeppelin Cloud assists in keeping digital documents and certifiates organized and up to date.</h4> 
+    <h4>With great features like Drag & Drop manifests, automated alerts, and single page vessel data exports, you will simplify your workload knowing your information is safe and secured.</h4>
+</div>
+
+    <!-- Form -->
+    <div class="container box-2">
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="form-actions">
+                <button class="submit" type="submit">Send</button>
+            </div>
+        </form>
+    </div>
 
 {% endblock %}
