@@ -167,49 +167,6 @@ h3,
 	filter: grayscale(0%);
 }
 
-/*
-.background-home {
-	background-image: url("pic_assets/backGroundImages/Yacht_Bow_oil.png");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.background-compliance {
-	background-image: url("pic_assets/backGroundImages/Yacht_Stern_oil.png");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.background-concierge {
-	background-image: url("pic_assets/backGroundImages/Sailing_Yacht_oil.png");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.background-contact {
-	background-image: url("pic_assets/backGroundImages/yacht_bow_2_oil.png");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.background-client {
-	background-image: url("pic_assets/backGroundImages/yacht_stern_2_oil.png");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.background-defalt {
-	background-image: url("pic_assets/backGroundImages/winch-oil.png");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-*/
 button.submit {
 	color: #495057;
 	display: block;
@@ -228,36 +185,3 @@ button.submit:hover {
 	transition-duration: 1s;
 	cursor: pointer;
 }
-
-/* greater than 992 w */
-
-
-/*
-h1 {
-	font-size: 8vw;
-}
-
-h2 {
-	font-size: 7vw;
-}
-
-h3 {
-	font-size: 6vw;
-}
-
-h4 {
-	font-size: 5vw;
-}
-
-h5 {
-	font-size: 4vw;
-}
-
-h6 {
-	font-size: 3vw;
-}
-
-p {
-	font-size: 2vw;
-}
-*/
