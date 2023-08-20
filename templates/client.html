@@ -6,28 +6,43 @@
 
 {% block content %}
 <div class="image-holder">
-    <video poster="/static/images/background/cloud_scape.png" autoplay loop>
-        <source src="/static/video/cloud_Sequence_01.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'> 
-        <source src="/static/video/cloud_Sequence_01.webm" type='video/webm'>
-        <source src="/static/video/cloud_Sequence_01_1.webm" type='video/mp4'>
-    </video>
+    <img src="/static/images/background/cloudscape_sea.png" class="width_100_prc">
 </div>
-
+<div class="container" style="padding: 50px;">
+    <h1  class="font-trajan-pro" style="font-weight: 200; text-align: center;">Zeppelin Cloud</h1>
+    <h4 style="text-align: center;">Yachting in the Cloud</h4>
+</div>
 <div class="box-inverse">
-    <h4>Welcom to yachting in the cloud, a secure CRM with a dedicated database server.</h4>
-    <h4>Zeppelin Cloud assists in keeping digital documents and certifiates organized and up to date.</h4> 
-    <h4>With great features like Drag &amp; Drop manifests, automated alerts, and single page vessel data exports, you will simplify your workload knowing your information is safe and secured.</h4>
-</div>
-
-    <!-- Form -->
-    <div class="container box-2">
-        <form method="post">
-            {% csrf_token %}
-            {{ form|crispy }}
-            <div class="form-actions">
-                <button class="submit" type="submit">Send</button>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-lg align-items-center" style="padding: 30px;">
+                <h4 style="line-height: 1.4;">The Zeppelin Cloud App is a vital tool for yacht management, tailored to serve not just Captains and Managers, but also owners.</h4> 
+                <h4 style="line-height: 1.4;">Zeppelin combines the functionalities of both CRM (Customer Relationship Management) and CMS (Content Management System) frameworks, 
+                providing a comprehensive all-in-one solution.</h4>
+                <h4 style="line-height: 1.4;">All of this is managed within a secure database, ensuring that your information is protected while maintaining accessibility.</h4>
             </div>
-        </form>
+            <div class="col-12 col-lg align-items-center" style="padding: 30px;">
+                <h5>Financial Features:</h5>
+                <ul>
+                    <li>Real-time Financial Data: Stay informed with up-to-the-minute financial figures.</li>
+                    <li>Invoice Approval Workflow: Manage and approve invoices effortlessly.</li>
+                    <li>Saved Financial Expense Reports: Stored and organized financial reports, and statements.</li>
+                </ul>
+                <h5>Operations Management:</h5>
+                <ul>
+                    <li>Document Management: Keep vital documents secure and accessible.</li>
+                    <li>Vessel Data: Retrieve & Export vessel details quickly and accurately.</li>
+                    <li>Automated alerts for certificates and licenses</li>
+                </ul>
+                <h5>Crew & Guest Data:</h5>
+                <ul>
+                    <li>View vital crew / guest information without hassle.</li>
+                    <li>Create and manipulate vessel manifests with simplified selections.</li>
+                    <li>Organzied and stored preference details for guests.</li>
+                </ul>
+            </div>
+        </div>
     </div>
+</div>
 
 {% endblock %}
